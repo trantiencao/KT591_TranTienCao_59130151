@@ -38,9 +38,6 @@ public class SecondFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(activity, LinearLayoutManager.VERTICAL,false));
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(activity,
-                new LinearLayoutManager(activity, LinearLayoutManager.VERTICAL,false).getOrientation());
-        recyclerView.addItemDecoration(dividerItemDecoration);
         dsNgoaiTe = FirstFragment.dsNgoaiTe;
         adapter = new Adapter(dsNgoaiTe);
         recyclerView.setAdapter(adapter);
